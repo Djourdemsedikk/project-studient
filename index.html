@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>تقييم الطلاب</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>تقييم الطلاب</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>الطالب</th>
+                    <th>السلوك</th>
+                    <th>الامتحان</th>
+                    <th>الشخصية</th>
+                    <th>الذكاء</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="student" data-name="صديق" data-values="85,90,88,92">
+                        <img src="images/sadiq.jpg" alt="صديق"> صديق
+                    </td>
+                    <td>جيد جدًا</td>
+                    <td>90%</td>
+                    <td>قيادي</td>
+                    <td>ذكي</td>
+                </tr>
+                <tr>
+                    <td class="student" data-name="عمر" data-values="90,95,93,94">
+                        <img src="images/omar.jpg" alt="عمر"> عمر
+                    </td>
+                    <td>ممتاز</td>
+                    <td>95%</td>
+                    <td>متعاون</td>
+                    <td>فائق</td>
+                </tr>
+                <tr>
+                    <td class="student" data-name="مصطفى" data-values="75,80,78,76">
+                        <img src="images/mustafa.jpg" alt="مصطفى"> مصطفى
+                    </td>
+                    <td>جيد</td>
+                    <td>80%</td>
+                    <td>هادئ</td>
+                    <td>ذكي</td>
+                </tr>
+                <tr>
+                    <td class="student" data-name="شريف" data-values="70,72,69,68">
+                        <img src="images/sharif.jpg" alt="شريف"> شريف
+                    </td>
+                    <td>متوسط</td>
+                    <td>72%</td>
+                    <td>اجتماعي</td>
+                    <td>عادي</td>
+                </tr>
+                <tr>
+                    <td class="student" data-name="سفيان" data-values="82,85,80,83">
+                        <img src="images/sofiane.jpg" alt="سفيان"> سفيان
+                    </td>
+                    <td>جيد</td>
+                    <td>85%</td>
+                    <td>متحمس</td>
+                    <td>فوق المتوسط</td>
+                </tr>
+                <tr>
+                    <td class="student" data-name="بخيث" data-values="93,95,94,96">
+                        <img src="images/bakheeth.jpg" alt="بخيث"> بخيث
+                    </td>
+                    <td>ممتاز</td>
+                    <td>95%</td>
+                    <td>منظم</td>
+                    <td>فائق</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="chartBox" style="display: none; margin-top: 40px; text-align: center;">
+            <h3 id="studentName">تقييم الطالب</h3>
+            <canvas id="studentChart" width="300" height="300"></canvas>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
